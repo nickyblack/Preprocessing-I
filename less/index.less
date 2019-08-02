@@ -22,6 +22,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-family: 'Rubik', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -54,6 +55,312 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	/*font-family ADD A FONT!*/
 }
 
+/* Set every element's box-sizing to border-box */
+/* Set every element's box-sizing to border-box */
+/* Set every element's box-sizing to border-box */
+
+h1 {
+	border-bottom: 2px solid black;
+	padding-bottom: 4%;
+}
+
+
+h1, h2, h3, h4, h5 {
+    
+    margin-bottom: 15px;
+	margin-top: 20px;
+	font-family: 'Rubik', sans-serif;
+	padding: 5% 5% 5% 5%;
+}
+
+p {
+	font-size: 15px;
+	line-height: 1.4;
+	font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    width: 800px;
+	margin: 0 auto;
+	
+}
+
+
+.Navigation { 
+	padding: 5% 5% 5% 5%;
+	width:100%; 
+}
+
+
+.topheader {
+	padding: 5% 5% 5% 5%;
+	display: flex;
+}
+
+
+/******* Variables ****/
+
+@whitebackground: white;
+@lightborder:  rgb(199, 199, 199);
+@resumefont: 'Rubik', sans-serif;
+
+/******* Variables ****/
+
+
+
+
+/******* Mixins ****/
+
+.boxstylemixin {
+	display:flex;
+	padding: 1%;
+	background-color: rgb(0, 0, 0);
+	color: @whitebackground;
+	font-family: @resumefont;
+	border-radius: 2px;
+	justify-content: space-around;
+	font-size: 12px;
+	padding: 5% 5% 5% 5%;
+}
+
+.FLEX {
+	display:flex
+}
+
+/******* Mixins ****/
+
+
+
+
+
+header nav {
+	.FLEX();
+	margin-top: 52px; 
+	flex-direction:row;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	padding-top: 1.5%;
+	padding-left: 60%;
+	padding: 5% 5% 5% 5%;
+	}
+  
+
+  header nav a {
+	font-family: @resumefont;
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+	margin-bottom: 2%;
+	padding: 5% 5% 5% 5%;
+	
+  }
+  
+  header nav a:hover {
+	text-decoration: underline;
+	 }
+
+
+
+
+
+
+
+	.IOD .IOD-text {
+	
+        .FLEX();
+        
+        justify-content: left;
+		align-items: stretch;
+		padding: 5% 5% 5% 5%;
+		
+		
+		
+        
+	}
+
+ 
+.IOD {
+	border: 2px solid black;
+	background-color: @whitebackground;
+	padding: 5% 5% 5% 5%;
+}
+
+/******* what i added ****/
+
+
+.full-name {
+	font-size: 40px;
+	
+	font-family: @resumefont;
+	padding: 5% 5% 5% 5%;
+}
+
+.biography {
+	
+	border-top: 1px solid black;
+	padding: 5% 5% 5% 5%;
+}
+
+
+.team {
+	margin-right: 80%;
+	background-color: rgb(0, 0, 0);
+	color: @whitebackground;
+	font-family: @resumefont;
+	border-radius: 5px;
+	padding: 5% 5% 5% 5%;
+}
+
+
+
+
+.css3 {
+	margin-top:17%;
+	margin-right: 30%;
+	.boxstylemixin()
+	padding: 5% 5% 5% 5%;
+}
+
+.html {
+	.boxstylemixin()
+	margin-right: 10%;
+	padding: 5% 5% 5% 5%;
+}
+
+
+.react {
+	margin-right: 70%;
+	.boxstylemixin()
+	padding: 5% 5% 5% 5%;
+}
+
+.javascript {
+	margin-right: 80%;
+	margin-top:6%;
+	.boxstylemixin()
+	padding: 5% 5% 5% 5%;
+}
+
+
+/******* Nesting ****/
+
+footer {
+	width: 100%;
+	background: black;
+	
+	.nav {
+	width: 100%;
+    .FLEX();
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 12px;
+	}
+	.a {
+	color: @whitebackground;
+    text-decoration: none;
+	}
+
+}
+/******* Nesting ****/
+
+
+
+
+
+
+
+
+
+.MAIN {
+	.FLEX();
+	flex-wrap: wrap;
+	width:100%;
+    justify-content: space-around;
+    margin-top: 50px;
+	border-top:1px dashed black;
+	border-bottom: 2px solid black;
+    padding: 5% 5% 5% 5%;
+    
+  }
+
+
+.TEXTbox {
+	width:48%;
+	margin:auto;
+    margin-top:40px;
+    margin-bottom: 40px;
+    padding:5px 5px 20px 5px;
+	border-bottom:1px dashed black;
+	border: 1px solid @lightborder;
+
+    
+    }
+
+    .Work-History {
+		font-size: 30px;
+		margin-top: 40px;
+		padding: 2%;
+		padding: 5% 5% 5% 5%;
+		
+		
+	}
+	
+
+.BBcom {
+	.FLEX();
+	padding-left: 2%;
+	border: 1px solid @lightborder;
+	padding: 5% 5% 5% 5%;
+}
+
+
+
+	.placeofwork {
+		font-size: 1.5rem;
+		padding: 5% 5% 5% 5%;
+		.FLEX();
+		
+		
+	}
+
+.description {
+	.FLEX();
+	justify-content: space-around;
+	font-size: 12px;
+	margin-left: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding: 5% 5% 5% 5%;
+	
+
+}
+
+.jobtext {
+	padding: 2%;
+}
+
+.CONTACT {
+	.FLEX();
+	align-items: center;
+	margin-top:5%;
+	margin-left:2%;
+	padding-left:40%;
+	margin-bottom:2%;
+	margin-left:2%;
+	font-size:2rem;
+}
+
+.contactinfo{
+	.FLEX();
+	align-items: center;
+	margin-left:40%;
+	margin-bottom: 5%;
+}
+
+	
+	
